@@ -194,7 +194,7 @@ export const ExportTableButton: React.FC<ExportFieldButtonProps> = (props) => {
       </Button>
       {showColumnPicker ? (
         <Modal
-          visible={showModal}
+          open={showModal}
           onOk={(): void => handleDownloadCSV()}
           onCancel={(): void => setShowModal(false)}
           width={400}
